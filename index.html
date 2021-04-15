@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="images/logo2.png">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome-all.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/font-awesome-all.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    
+    
+</head>
+                                                                                                 
+<body class="home">
+    <div class="page-bg-holder">
+        <img src="images/background.png" alt="">
+    </div>
+    <!-- header -->
+
+    <div class="">
+        <div class="w3-sidebar w3-bar-block w3-border-right" id="mySidebar" style="overflow: hidden;">
+            <button id="bread-icon" class="w3-button bread-icon w3-teal w3-xlarge menu-breadcrumbs" onclick="w3_open()"><i class="fas fa-bars"></i></button>
+
+            <button onclick="w3_close()" id="close-icon" class="w3-large close-icon menu-breadcrumbs row">
+                <i class="fas fa-bars"></i>
+                <img src="images/logo_03.png" style="width: 110px; margin-left: 45px;"/>
+            </button>
+            <div class="row">
+                <div class="menu-icon">
+                  <a href="index.html"> <i class="fas fa-home" style="color: #6f63fb;"></i> </a>
+                <a href="index.html" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">Home</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="menu-icon">
+                  <a href="trading.html"> <i class="fas fa-chart-line" style="color: #6f63fb;"></i> </a>
+                    <a href="trading.html" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">Trading</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="menu-icon">
+                  <a href="staking.html"> <i class="fas fa-coins" style="color: #6f63fb;"></i> </a>
+                    <a href="staking.html" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">Staking</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="menu-icon">
+                    <a href="about.html"> <i class="fas fa-info-circle" style="color: #6f63fb;"></i> </a>
+                    <a href="about.html" id="w3-bar-item4" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">About us</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="menu-icon">
+                    <a href="about.html"> <i class="fas fa-ellipsis-h" style="color: #6f63fb;"></i> </a>
+                    <a href="about.html" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">More</a>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="menu-icon">
+                    <a href="https://twitter.com/NFYBFinance"> <i class="fab fa-twitter" style="color: #6f63fb;"></i> </a>
+                    <a href="https://twitter.com/NFYBFinance" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">Twitter</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="menu-icon">
+                    <a href="https://github.com/NFYBFinance"> <i class="fab fa-github" style="color: #6f63fb;"></i> </a>
+                    <a href="https://github.com/NFYBFinance" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">GitHub</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="menu-icon">
+                    <a href="#"> <i class="fab fa-telegram" style="color: #6f63fb;"></i> </a>
+                    <a href="#" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">Telegram</a>
+                </div>
+            </div>
+            <div style="margin-top: 160px;"></div>
+            <div class="row">
+                <div class="menu-icon">
+                    <a href="#"> <i class="fas fa-cog" style="color: #6f63fb;"></i> </a>
+                    <a href="#" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">Settings</a>
+                </div>
+            </div>
+
+          </div>
+
+        <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+            
+            <a href="index.html"><img src="images/logo_03.png" alt="" class="logo-pic"  style="padding-left: 50px;"></img></a>
+                
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="navbar-nav px-3">
+                <li class="nav-item text-nowrap">
+                    <button href="#" type="button" class="btn nav-link connect_button" >Connect</button>
+                </li>
+                </ul>
+        </header>
+    <!-- end header -->
+
+    <div id="adjust" class="row pdt100px mrl80"> 
+        <div class="row">
+            <div class="col-md-12 "><h1>nfyb.finance is disrupting defi</h1></div> 	  
+            <div class="col-sm-12 col-md-12 col-lg-7"> 	                                          
+                <p>We are the world’s first defi protocol on BSC to utilize NFT tokens to make yield farming more secure and more flexible by protecting your wallet and by creating the first transferable stake.</p>
+                <a href="about.html" class="btn find-btn">FIND OUT MORE</a>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-5">
+                <img src="./images/Locker.png">
+            </div>
+        </div>
+        <div class="bg-white pdt100px pdl20" style="border-bottom: 1px solid #f1f1fd;">
+            <div class="row">
+                <div class="col-md-6"> 	  
+                    <h1>REWARDS WITHOUT THE PENALTY</h1>
+                                        
+                    <p>
+                        We will lock your liquidity without locking you in. You get to earn yield with the stability of locked user liquidity. Our protocol uses NFTs to wrap your liquidity which will allow you to simply sell your liquidity on our trading platform! Your tokens may be locked, but the value is not!                    </p>
+                        
+                    <div class="row pdl20">
+                        <div class=""><a href="about.html" class="btn find-btn">LAUNCH BUILDER</a></div>
+                        <div class=""><a href="about.html" class="btn2 find-btn">READ MORE</a></div>
+                    </div>    
+                </div>
+                <div class="col-md-6">
+                    <img src="./images/wallet.png">
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="bg-white pdt100px pdl20" style="border-bottom: 1px solid #f1f1fd;">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./images/staking.png">
+                </div>
+                <div class="col-md-6"> 	  
+                    <h1>SECURED STAKING</h1>
+                                        
+                    <p>
+                        The protocol utilizes NFT tokens to make yield farming more secure and more flexible
+                        by protecting your wallet and by creating the first transferable stake.`                     
+                    </p>
+                        
+                    <div class="row pdl20">
+                        <div class=""><a href="about.html" class="btn find-btn">LAUNCH BUILDER</a></div>
+                        <div class=""><a href="about.html" class="btn2 find-btn">READ MORE</a></div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white pdt100px pdl20">
+            
+                <div class="col-md-12"> 	  
+                    <h3>
+                        AS A USER OF THE NFYB PLATEFORM BY DEFAULT ARE IN AGREEMENT THAT YOU DO SO AT YOUR OWN RISK.
+                        ALL THE LIABILITY RESIDES WITH THE USER. RISK ONLY WHAT YOU ARE WILLING TO LOSE.
+                    </h3>    
+                </div>
+        </div>
+
+    </div>    
+   
+    </div>
+    <footer>
+        <div class="hero-banner-social page-social-section"></div>
+        <div class="foo-pdt" id="foo">    
+            <div class="row">
+                
+                <div class="col-md-5">
+                    <p>COPYRIGHT ALL RIGHTS RESERVED NFYB.FINANCE 2021</p>
+                </div>
+                <div class="col-md-7 row">
+                    <div style="margin-left: 30px;">
+                        <a href="https://twitter.com/NFYBFinance"> <i class="fab fa-twitter" style="color: #000;"></i> </a>
+                    </div>
+                    <div style="margin-left: 30px;">
+                        <a href="#"> <i class="fab fa-telegram" style="color: #000;"></i> </a>
+                    </div>
+                    <div style="margin-left: 30px;">
+                        <a href="https://github.com/NFYBFinance"> <i class="fab fa-github" style="color: #000"></i> </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="js/custom.js"></script>
+    <script type="text/javascript" src="js/web3.min.js"></script>
+    <script type="text/javascript" src="js/abi.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

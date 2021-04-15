@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Staking</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="images/logo2.png">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome-all.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/font-awesome-all.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
+
+    
+</head>
+                                                                                                 
+<body>
+
+
+<div class="page-bg-holder">
+    <img src="images/background.png" alt="">
+</div>
+
+    <!-- header -->
+    <div class="">
+        <div class="w3-sidebar w3-bar-block w3-border-right" id="mySidebar" style="overflow: hidden;">
+            <button id="bread-icon" class="w3-button bread-icon w3-teal w3-xlarge menu-breadcrumbs" onclick="w3_open()"><i class="fas fa-bars"></i></button>
+
+            <button onclick="w3_close()" id="close-icon" class="w3-large close-icon menu-breadcrumbs row">
+                <i class="fas fa-bars"></i>
+                <img src="images/logo_03.png" style="width: 110px; margin-left: 45px;"/>
+            </button>
+            <div class="row">
+                <div class="menu-icon">
+                  <a href="index.html"> <i class="fas fa-home" style="color: #6f63fb;"></i> </a>
+                <a href="index.html" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">Home</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="menu-icon">
+                  <a href="trading.html"> <i class="fas fa-chart-line" style="color: #6f63fb;"></i> </a>
+                    <a href="trading.html" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">Trading</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="menu-icon">
+                  <a href="staking.html"> <i class="fas fa-coins" style="color: #6f63fb;"></i> </a>
+                    <a href="staking.html" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">Staking</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="menu-icon">
+                    <a href="about.html"> <i class="fas fa-info-circle" style="color: #6f63fb;"></i> </a>
+                    <a href="about.html" id="w3-bar-item4" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">About us</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="menu-icon">
+                    <a href="about.html"> <i class="fas fa-ellipsis-h" style="color: #6f63fb;"></i> </a>
+                    <a href="about.html" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">More</a>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="menu-icon">
+                    <a href="https://twitter.com/NFYBFinance"> <i class="fab fa-twitter" style="color: #6f63fb;"></i> </a>
+                    <a href="https://twitter.com/NFYBFinance" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">Twitter</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="menu-icon">
+                    <a href="https://github.com/NFYBFinance"> <i class="fab fa-github" style="color: #6f63fb;"></i> </a>
+                    <a href="https://github.com/NFYBFinance" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">GitHub</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="menu-icon">
+                    <a href="#"> <i class="fab fa-telegram" style="color: #6f63fb;"></i> </a>
+                    <a href="#" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">Telegram</a>
+                </div>
+            </div>
+            <div style="margin-top: 160px;"></div>
+            <div class="row">
+                <div class="menu-icon">
+                    <a href="#"> <i class="fas fa-cog" style="color: #6f63fb;"></i> </a>
+                    <a href="#" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">Settings</a>
+                </div>
+            </div>
+
+          </div>
+
+        <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+            
+            <a href="index.html"><img src="images/logo_03.png" alt="" class="logo-pic"  style="padding-left: 50px;"></img></a>
+                
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="navbar-nav px-3">
+                <li class="nav-item text-nowrap">
+                    <button href="#" type="button" class="btn nav-link connect_button" >Connect</button>
+                </li>
+                </ul>
+        </header>
+    <!-- end header -->
+
+
+    <!-- Header Bottom Section -->
+    <div class="container" id="adjust" >
+    <section class="header-bottom-section common-px" >
+        <div class="container-fluid p-lg-0">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="has-underline">
+                        <button class="btn connect_button">STAKING/UNSTAKING</button>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="trp1">
+                        <h3><span >TOTAL REWARD POOL = </span><span id="nfy-reward-pool" class="nfy-reward" style="color: #000;">N/A</span> NFYB</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 text-md-right">
+                    <button class="btn connect_button">UNLOCK WALLET</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Header Bottom Section -->
+    
+
+ 
+     
+
+    <section class="stake-nfy-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6">
+
+                    <div class= "">
+                        <div style="background-color: #d5def0;">
+                            <div class="staking-ad">
+                                <h3 style="color: white;">NFYB Staking Vault</h3>
+                                <p style="color: #d7d3c1;padding-bottom: 10px; margin-bottom: 10px;">UNSTAKE NFYB FROM V1 AND MOVE TO V2 </p>
+                                
+                            </div>
+                            
+                            <div id="nfy-stake-details" class="staking-card">
+                                <h3>
+                                    <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                                    <span class="staking-textcolor">NFYB STAKING VAULT V2<br> <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                                    TOTAL STAKED : </span><span id="total-nfy-staked" style="color: #000;"> N/A <span class="staking-textcolor">NFYB</span></span>
+                                    <br></span> 
+                                    <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                                    <span class="text-small" class="staking-textcolor">0.10% OF REWARD POOL DAILY</span>
+                                    <br>
+                                    <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                                    <span class="staking-textcolor">YOUR NFYB BALANCE : </span><span class="nfy-balance" style="color: #000;">N/A</span>
+                                    <br>
+                                    <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                                    <span class="staking-textcolor">STAKED NFYB/ NFT BALANCE : </span><span class="nfy-staked" style="color: #000;">N/A</span> / <span id="total-nfy-nfts" style="color: #000;">N/A</span>
+                                    <br>
+                                    <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                                    <span class="staking-textcolor">APY : </span> <span id="nfy-apy" style="color: #000;">N/A</span>
+                                    <span class="staking-textcolor">&nbsp; &nbsp; YOUR REWARDS : </span> <span class="nfy-rewards" style="color: #000;">N/A <span style="color: #1d77ee;">NFYB</span></span>
+                                </h3>
+                            </div>
+                            <div class="nfy-balance-box staking-card">
+                                    <div class="d-flex align-items-center nfy-balance-box-inner outer-border">
+                                        <div class="input-holder">
+                                            <label for="">INPUT</label>
+                                        </div>
+                                        <input type="number" id="input-nfy-stake" value="0">
+                                        <p class="grey">NFYB</p>
+                                    </div>
+                                    <div class="d-flex align-items-center nfy-balance-box-inner">
+                                        <input type="submit" data-toggle="modal"  data-target="#nfy-staking-page" class="btn submit-nfy-stake submit-left" value="STAKE NFYB">
+                                        <input type="submit" id="unstake-nfy" class="btn submit-nfy-stake " value="UNSTAKE NFYB">
+
+                                    </div>
+                                    <input type="submit" class="nfy-balance-box-inner btn" data-toggle="modal" data-target="#nfy-rewards-page" value="COMPOUND / CLAIM REWARDS">
+
+                                    <!--<input type="submit" id="submit-nfy-stake" class="btn" value="STAKE NFY">
+                                    <input type="submit" id="unstake-nfy" class="btn" value="UNSTAKE NFY">
+                                    <input type="submit" class="btn" data-toggle="modal" data-target="#nfy-rewards-page" value="COMPOUND / CLAIM REWARDS">-->
+                                        <!--<button id="submit-nfy-stake" class="btn">STAKE NFY</button>-->
+
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="modal claim-rewards-modal fade" id="nfy-staking-page" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body" style="background-color: white;">
+                                <div class="text-center">
+                                    <h3>STAKE NFYB</h3>
+                                </div>
+
+                                <div class="nfy-balance-box stake-section-box">
+
+                                    <div class="d-flex align-items-center nfy-balance-box-inner stake-box-inner justify-content-center">
+
+                                        <div class="input-holder3" >
+                                            <h3><span style="color: black;">WHEN YOU UNSTAKE PLEASE REMEMBER THAT <br> </span>5%<span style="color: black;"> GOES TO THE REWARDS POOL TO ASSIST THE NFYB ECO SYSTEM.</span></h3>
+                                            <h3><span style="color: black;">ALSO NOTE FOR STAKING YOU NEED TO APPROVE IT <br>FIRST AND THEN STAKE. </span></h3>
+                                        </div>
+
+                                    </div>
+                                    <div style="margin-top: 120px;"></div>
+
+                                    <div class="row arrow-hoolder center-col" id="stake-nfy-div">
+                                        <div class="col-sm-6 center-col">
+                                            <input id="stake-nfy" type="submit" class="btn" value="STAKE NFYB">
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                    <div class="modal claim-rewards-modal fade" id="nfy-rewards-page" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <!-- <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div> -->
+                          <div class="modal-body">
+                            <div class="text-center">
+                               <h3>CLAIM / COMPOUND REWARDS</h3>
+                            </div>
+
+                             <div class="nfy-balance-box stake-section-box">
+
+                                <div class="d-flex align-items-center nfy-balance-box-inner stake-box-inner justify-content-center">
+                                    <div class="stake-section-icon">
+                                        <img src="images/nfy_icon.png" alt="">
+                                    </div>
+
+                                    <div class="input-holder">
+                                        <h3><span class="text-green">YOUR NFYB BALANCE : </span><span class="nfy-balance">N/A</span></h3>
+                                        <h3><span class="text-green">YOUR REWARDS : </span><span class="nfy-rewards">N/A </span></h3>
+                                    </div>
+
+                                </div>
+
+                                <div class="row arrow-hoolder justify-content-between">
+                                    <div class="col-sm-6 left-col">
+                                        <div class="arrow-icon">
+                                            <img src="images/arrow.png" alt="">
+                                        </div>
+                                        <a href="#" id="compound-nfy" class="btn" data-toggle="modal" data-target="#exampleModalLong">COMPOUND REWARDS</a>
+                                        <small>BY COMPOUNDING REWARDS YOU STAKE ACCUMULATED REWARDS DIRECTLY TO YOUR NFYB STAKE.</small>
+                                    </div>
+                                    <div class="col-sm-6 right-col">
+                                        <div class="arrow-icon">
+                                            <img src="images/arrow-1.png" alt="">
+                                        </div>
+                                        <a href="#" id="claim-nfy" class="btn">CLAIM REWARDS</a>
+                                        <small>BY CLAIMING REWARDS YOU WITHDRAW ACCUMULATED REWARDS TO YOUR WALLET.</small>
+                                    </div>
+                                </div>
+
+
+
+                           </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   <!-- Modal -->
+                <div class="col-lg-6">
+                    <div class="">
+                        <div style="background-color: #d5def0;">
+                        <div class="staking-ad">
+                            <h3 style="color: white;">NFYB/BNB LP Staking Vault</h3>
+                            <p style="color: #d7d3c1;padding-bottom: 10px; margin-bottom: 10px;">UNSTAKE NFYB FROM V1 AND MOVE TO V2 </p>
+                        </div>
+                        <div id="lp-stake-details" class="staking-card">
+                            <h3>
+                                <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                                <span class="staking-textcolor">NFYB/BNB LP STAKING VAULT V2</span>
+                                <br>
+                                <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                                <span class="staking-textcolor"> TOTAL STAKED : </span><span id="total-lp-staked" style="color: #000;"> N/A <span style="color:#1d77ee"> NFYB/BNB LP</span></span> 
+                                <br>
+                                <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                                <span class="text-small" class="staking-textcolor">0.30% OF REWARD POOL DAILY</span>
+                                <br>
+                                <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                                <span class="staking-textcolor">YOUR NFYB/BNB LP BALANCE : </span><span id="lp-balance" style="color: #000;">N/A</span>
+                                <br>
+                                <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                                <span class="staking-textcolor">STAKED LP / NFT BALANCE : </span><span class="lp-staked" style="color: #000;">N/A</span> / <span id="total-lp-nfts" style="color: #000;">N/A</span>
+                                <br>
+                                <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                                <span class="staking-textcolor">APY : </span> <span id="lp-apy" style="color: #000;">N/A</span>
+                                <span class="staking-textcolor">&nbsp; &nbsp; YOUR REWARDS : </span> <span id="lp-rewards" style="color: #000;">N/A <span style="color: #1d77ee;">NFYB</span></span>
+                            </h3>
+                        </div>
+                        <div class="nfy-balance-box staking-card">
+
+                                <div class="d-flex align-items-center nfy-balance-box-inner outer-border">
+                                    <div class="input-holder">
+                                    <label for="">INPUT</label>
+                                    </div>
+                                    <input id="input-lp-stake" type="number" value="0">
+                                    <div style="width: 36%;">
+                                        <p>NFYB/BNB LP</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center nfy-balance-box-inner">
+                                    <input type="submit" data-toggle="modal" data-target="#lp-stake-page" class="btn submit-nfy-stake submit-left" value="STAKE NFYB-BNB LP">
+                                    <!--<a href="trading.html">-->
+                                    <input type="submit" class="btn submit-nfy-stake" value="TRADE" onclick="window.location='trading.html';">
+
+                                    <!--</a>-->
+                                    <!--<a class="btn btn submit-nfy-stake" href="trading.html">TRADE</a>-->
+
+                                </div>
+                                <input type="submit" id="claim-lp-rewards" class="nfy-balance-box-inner btn" value="CLAIM REWARDS">
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                    <div class="modal claim-rewards-modal fade" id="lp-stake-page" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body" style="background-color: white;">
+                            <div class="text-center">
+                               <h3>STAKE NFYB/BNB LP TOKENS</h3>
+                            </div>
+
+                             <div class="nfy-balance-box stake-section-box">
+
+                                <div class="d-flex align-items-center nfy-balance-box-inner stake-box-inner justify-content-center">
+
+                                    <div class="input-holder3">
+                                        <h3><span style="color: black;">ONCE STAKED, ALL NFYB/BNB LP TOKENS ARE LOCKED. IT IS IMPOSSIBLE TO UNSTAKE THESE LP TOKENS. HOWEVER, THE
+                                        RIGHTS TO THESE LP TOKENS AND THEIR YIELD ARE ABLE TO BE SOLD AND BOUGHT VIA NFYB TRADING PLATFORM.<br>
+                                            BY STAKING YOU AGREE TO THIS.<br>
+                                        LOCK YOUR LIQUIDITY NOT YOUR VALUE!</span></h3>
+                                    </div>
+
+                                </div>
+                                <div style="margin-top: 160px;"></div>
+                                <div class="row arrow-hoolder center-col" id="stake-lp-div">
+                                    <div class="col-sm-6 center-col">
+                                        <input id="submit-lp-stake" type="submit" class="btn" value="STAKE NFYB/BNB LP">
+                                    </div>
+
+                                </div>
+
+
+
+                           </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   <!-- Modal -->
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="staking-grey">
+                <div class="bg-white staking-usr">
+                    <div class="col-md-12"> 	  
+                        <h3>
+                            AS A USER OF THE NFYB PLATEFORM BY DEFAULT ARE IN AGREEMENT THAT YOU DO SO AT YOUR OWN RISK.
+                            ALL THE LIABILITY RESIDES WITH THE USER. RISK ONLY WHAT YOU ARE WILLING TO LOSE.
+                        </h3>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <footer>
+        <div class="hero-banner-social page-social-section"></div>
+        <div class="foo-pdt" id="foo">    
+            <div class="row">
+                
+                <div class="col-md-5">
+                    <p>COPYRIGHT ALL RIGHTS RESERVED NFYB.FINANCE 2021</p>
+                </div>
+                <div class="col-md-7 row">
+                    <div style="margin-left: 30px;">
+                        <a href="https://twitter.com/NFYFinance"> <i class="fab fa-twitter" style="color: #000;"></i> </a>
+                    </div>
+                    <div style="margin-left: 30px;">
+                        <a href="https://t.me/NFYOfficialChat"> <i class="fab fa-telegram" style="color: #000;"></i> </a>
+                    </div>
+                    <div style="margin-left: 30px;">
+                        <a href="https://github.com/NFYFinance"> <i class="fab fa-github" style="color: #000"></i> </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+        
+    
+
+    <script src="js/custom.js"></script>
+    <script type="text/javascript" src="js/web3.min.js"></script>
+    <script type="text/javascript" src="js/abi.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

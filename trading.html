@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Trading</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="images/logo2.png">
+
+  <link href="css/bootstrap.min.css"
+        rel="stylesheet">
+  <link href="css/font-awesome-all.css"
+        rel="stylesheet"
+        type="text/css">
+  <link href="css/slick.css"
+        rel="stylesheet"
+        type="text/css">
+  <link href="css/slick-theme.css"
+        rel="stylesheet"
+        type="text/css">
+  <link href="css/animate.css"
+        rel="stylesheet"
+        type="text/css">
+  <link href="css/custom.css"
+        rel="stylesheet"
+        type="text/css">
+
+  <link href="css/jquery.mCustomScrollbar.css"
+        rel="stylesheet"
+        type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/font-awesome-all.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <link href="css/nice-select.css"
+        rel="stylesheet"
+        type="text/css">
+
+
+
+</head>
+
+<body>
+
+
+  <div class="page-bg-holder">
+    <img src="images/background.png"
+         alt="">
+  </div>
+
+  <!-- header -->
+  <div class="">
+    <div class="w3-sidebar w3-bar-block w3-border-right" id="mySidebar" style="overflow: hidden;">
+        <button id="bread-icon" class="w3-button bread-icon w3-teal w3-xlarge menu-breadcrumbs" onclick="w3_open()"><i class="fas fa-bars"></i></button>
+
+        <button onclick="w3_close()" id="close-icon" class="w3-large close-icon menu-breadcrumbs row">
+            <i class="fas fa-bars"></i>
+            <img src="images/logo_03.png" style="width: 110px; margin-left: 45px;"/>
+        </button>
+        <div class="row">
+            <div class="menu-icon">
+              <a href="index.html"> <i class="fas fa-home" style="color: #6f63fb;"></i> </a>
+            <a href="index.html" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">Home</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-icon">
+              <a href="trading.html"> <i class="fas fa-chart-line" style="color: #6f63fb;"></i> </a>
+                <a href="trading.html" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">Trading</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-icon">
+              <a href="staking.html"> <i class="fas fa-coins" style="color: #6f63fb;"></i> </a>
+                <a href="staking.html" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">Staking</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-icon">
+                <a href="about.html"> <i class="fas fa-info-circle" style="color: #6f63fb;"></i> </a>
+                <a href="about.html" id="w3-bar-item4" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">About us</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-icon">
+                <a href="about.html"> <i class="fas fa-ellipsis-h" style="color: #6f63fb;"></i> </a>
+                <a href="about.html" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">More</a>
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="menu-icon">
+                <a href="https://twitter.com/NFYBFinance"> <i class="fab fa-twitter" style="color: #6f63fb;"></i> </a>
+                <a href="https://twitter.com/NFYBFinance" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">Twitter</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-icon">
+                <a href="https://github.com/NFYBFinance"> <i class="fab fa-github" style="color: #6f63fb;"></i> </a>
+                <a href="https://github.com/NFYBFinance" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">GitHub</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-icon">
+                <a href="#"> <i class="fab fa-telegram" style="color: #6f63fb;"></i> </a>
+                <a href="#" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">Telegram</a>
+            </div>
+        </div>
+        <div style="margin-top: 160px;"></div>
+        <div class="row">
+            <div class="menu-icon">
+                <a href="#"> <i class="fas fa-cog" style="color: #6f63fb;"></i> </a>
+                <a href="#" id="w3-bar-item" class="w3-bar-item w3-button" style="color: #6f63fb;font-size: 20px;">Settings</a>
+            </div>
+        </div>
+
+      </div>
+
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        
+        <a href="index.html"><img src="images/logo_03.png" alt="" class="logo-pic"  style="padding-left: 50px;"></img></a>
+            
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <button href="#" type="button" class="btn nav-link connect_button" >Connect</button>
+            </li>
+            </ul>
+    </header>
+  <!-- end header -->
+
+
+  <!-- Header Bottom Section -->
+  <div class="trading-mar" id="adjust">
+  <section class="header-bottom-section common-px">
+    <div class="container-fluid p-lg-0">
+      <div class="row">
+        <div class="col-md-4 text-center"
+             data-toggle="modal"
+             data-target="#nfy-deposit-page">
+          <a href="#"
+            class="btn">DEPOSIT / WITHDRAW</a>
+        </div>
+        <div class="col-md-4">
+          <div class="has-underline trp">
+            <h3>TRADING FLOOR</h3>
+        </div>
+        </div>
+        <div class="col-md-4 text-md-right">
+          <a href="#"
+             class="btn connect_button">UNLOCK WALLET</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Header Bottom Section -->
+
+
+
+  <section class="stake-nfy-section">
+    <div class="">
+      <div class="row">
+        
+        <div class="col-lg-6">
+          <div class="trade-box-section">
+            <div class="trading-ad">
+              <div class="head" style="color: white;">Trade NFYB NFT</div>
+            </div>
+            <div class="sub-heading-trade staking-card" style="margin-top: 12px;">
+              <h3>
+                <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                <span class="staking-textcolor">Fee: <span style="color:black;">0.25</span> NFYB</span>
+                <br>
+                <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                <span class="staking-textcolor">NFY STAKE VALUE IN NFT(S) </span>: <span class="nfy-staked" style="color: black;">N/A</span>
+                <br>
+                <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                <span class="staking-textcolor">YOUR DEPOSITED NFY STAKE</span>: <span id="nfyDeposited" style="color: black;"> N/A</span>
+                <br>
+                <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                <span class="staking-textcolor">YOUR DEPOSITED BNB</span>: <span class="ethDeposited" style="color: black;">N/A</span>
+              </h3>
+            </div>
+            <div class="nfy-balance-box" >
+              <div class="d-flex nfy-balance-box-inner pd5">
+                <div class="col-sm-6 trade-input-col bgw bdr">
+                  <div class="red-heading text-left">SELL</div>
+                  <div class="d-flex align-items-center nfy-balance-box-inner outer-border mb20 bgw">
+                    <div class="input-holder1">
+                      <label for="">PRICE</label>
+                    </div>
+                    <input id="price-sell-nfy"
+                      type="number"
+                      value="0.00">
+                    <p class="grey">BNB</p>
+                  </div>
+
+                  <div class="d-flex align-items-center nfy-balance-box-inner outer-border mb20 bgw">
+                    <div class="input-holder1">
+                      <label for="">QUANTITY</label>
+                    </div>
+                    <input id="quantity-sell-nfy"
+                           type="number"
+                           value="0.00">
+                  </div>
+
+                  <div class="custom-scroll-outer">
+                    <div class="info-list-holder">
+                      <div class="heading left-heading">
+                        <ul class="three-col">
+                          <li>PRICE BNB</li>
+                          <li>AMOUNT</li>
+                          <li>TOTAL</li>
+                        </ul>
+                      </div>
+                      <div class="info-scroll-div custom-scroll"
+                           id="custom-scroll">
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="trade-btn-holdder nfy">
+                    <a href="javascript:;"
+                       class="btn btn-red"
+                       id="btn-sell-nfy">SELL</a>
+                  </div>
+
+                  <a class="btn-cancel opacity" id="cancel-nfy-sell" href="javascript:;">CANCEL LATEST PLACED ORDER</a>
+
+                </div>
+                <div class="col-sm-6 trade-input-col bgw bdr">
+                  <div class="red-heading text-left text-green">BUY</div>
+                  <div class="d-flex align-items-center nfy-balance-box-inner outer-border mb20 bgw">
+                    <div class="input-holder1">
+                      <label for="">PRICE</label>
+                    </div>
+                    <input id="price-buy-nfy"
+                    type="number"
+                    value="0.00">
+                    <p class="grey">BNB</p>
+                  </div>
+                  <div class="d-flex align-items-center nfy-balance-box-inner outer-border mb20 bgw">
+                    <div class="input-holder1">
+                      <label for="">QUANTITY</label>
+                    </div>
+                    <input id="quantity-buy-nfy"
+                    type="number"
+                    value="0.00">
+                  </div>
+                  
+
+
+                  <div class="custom-scroll-outer">
+                    <div class="info-list-holder">
+                      <div class="heading right-heading">
+                        <ul class="three-col">
+                          <li>PRICE BNB</li>
+                          <li>AMOUNT</li>
+                          <li>TOTAL</li>
+                        </ul>
+                      </div>
+                      <div class="info-scroll-div custom-scroll"
+                           id="custom-scroll1">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="trade-btn-holdder nfy">
+                    <a id="btn-buy-nfy"
+                       href="javascript:;"
+                       class="btn ">BUY</a>
+                  </div>
+
+                  <a class="btn-cancel opacity" id="cancel-nfy-buy" href="javascript:;">CANCEL LATEST PLACED ORDER</a>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="trade-box-section">
+            <div class="trading-ad">
+              <div class="head" style="color: white;">TRADE NFYB NFT</div>
+            </div>
+            <div class="sub-heading-trade staking-card" style="margin-top: 12px;">
+              <h3>
+                <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                <span>Fee:<span style="color: black;"> 0.25</span> NFYB</span>
+                <br>
+                <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                <span class="staking-textcolor">NFY/BNB LP STAKE VALUE IN NFT(S) </span>: <span class="lp-staked" style="color: black;">N/A</span>
+                <br>
+                <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                <span class="staking-textcolor">YOUR DEPOSITED NFY/BNB LP STAKE</span>: <span id="lpDeposited" style="color: black;">N/A</span>
+                <br>
+                <i class="fas fa-angle-double-right" style="color:#1d77ee"></i>
+                <span class="staking-textcolor">YOUR DEPOSITED BNB</span>: <span class="ethDeposited" style="color: black;">N/A</span>
+              </h3>
+            </div>
+            <div class="nfy-balance-box">
+              <div class="d-flex nfy-balance-box-inner">
+                <div class="col-sm-6 trade-input-col bgw bdr">
+                  <div class="red-heading text-left">SELL</div>
+                  <div class="d-flex align-items-center nfy-balance-box-inner outer-border mb20 bgw">
+                    <div class="input-holder1">
+                      <label for="">PRICE</label>
+                    </div>
+                    <input id="price-sell-lp"
+                    type="number"
+                    value="0.00">
+                    <p class="grey">BNB</p>
+                  </div>
+                  <div class="d-flex align-items-center nfy-balance-box-inner outer-border mb20 bgw">
+                    <div class="input-holder1">
+                      <label for="">QUANTITY</label>
+                    </div>
+                    <input id="quantity-sell-lp"
+                    type="number"
+                    value="0.00">
+                  </div>
+
+                  <div class="custom-scroll-outer">
+                    <div class="info-list-holder">
+                      <div class="heading left-heading">
+                        <ul class="three-col">
+                          <li>PRICE BNB</li>
+                          <li>AMOUNT</li>
+                          <li>TOTAL</li>
+                        </ul>
+                      </div>
+                      <div class="info-scroll-div custom-scroll" id="nfylpSell">
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="trade-btn-holdder eth">
+                    <a id="btn-sell-nfylp"
+                       href="javascript:;"
+                       class="btn btn-red">SELL</a>
+                  </div>
+
+                  <a class="btn-cancel opacity" id="cancel-nfylp-sell" href="javascript:;">CANCEL LATEST PLACED ORDER</a>
+
+                </div>
+
+                <div class="col-sm-6 trade-input-col bgw bdr">
+                  <div class="red-heading text-left text-green">BUY</div>
+                  <div class="d-flex align-items-center nfy-balance-box-inner outer-border mb20 bgw">
+                    <div class="input-holder1">
+                      <label for="">PRICE</label>
+                    </div>
+                    <input input id="price-buy-lp"
+                    type="number"
+                    value="0.00">
+                    <p class="grey">BNB</p>
+                  </div>
+                  <div class="d-flex align-items-center nfy-balance-box-inner outer-border mb20 bgw">
+                    <div class="input-holder1">
+                      <label for="">QUANTITY</label>
+                    </div>
+                    <input id="quantity-buy-lp"
+                    type="number"
+                    value="0.00">
+                  </div>
+
+
+                  <div class="custom-scroll-outer">
+                    <div class="info-list-holder">
+                      <div class="heading right-heading">
+                        <ul class="three-col">
+                          <li>PRICE BNB</li>
+                          <li>AMOUNT</li>
+                          <li>TOTAL</li>
+                        </ul>
+                      </div>
+                      <div class="info-scroll-div custom-scroll"
+                           id="custom-scroll1">
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="trade-btn-holdder eth">
+                    <a id="btn-buy-nfylp"
+                       href="javascript:;"
+                       class="btn ">BUY</a>
+                  </div>
+
+                  <a class="btn-cancel opacity" id="cancel-nfylp-buy" href="javascript:;">CANCEL LATEST PLACED ORDER</a>
+
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal claim-rewards-modal fade"
+         id="nfy-deposit-page"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="exampleModalLongTitle"
+         aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered"
+           role="document">
+        <div class="modal-content">
+          <div class="modal-body" style="background-color: white;">
+            <div class="nfy-balance-box stake-section-box">
+              <div
+                class="d-flex align-items-center nfy-balance-box-inner stake-box-inner  box-deposit-page justify-content-center">
+                <div class="text-center">
+                  <h3 class="text-green"
+                      id="deposit-title">DEPOSIT</h3>
+                  <h3 class="darker-title"
+                      id="withdraw-title">WITHDRAW</h3>
+                  <div class="input-holder3 container" >
+                    <input type="checkbox"
+                           id="toggle-button"
+                           class="toggle-button">
+                  </div>
+                  <div class="select-box margin-bottom">
+                    <select class="wide"
+                            name="asset-select"
+                            id="deposit-asset-select">
+                      <option disabled
+                              selected
+                              value="">SELECT ASSET</option>
+                      <option value="eth">BNB</option>
+                      <option value="nfylp">NFYB/BNB LP NFT</option>
+                      <option value="nfy">NFYB NFT</option>
+                    </select>
+                  </div>
+                  <div class="input4 margin-bottom">
+                    <label for="">VALUE IN PLATFORM</label>
+                    <input disabled type="number" style="text-align: center;"
+                           id="input-deposit-value"
+                           value="0">
+                  </div>
+                  <div id="deposit-scrollbox"
+                       class=" margin-bottom input4">
+                    <div class="deposit-scroll-bar  custom-scroll-outer hidden">
+                      <div class="info-list-holder">
+
+                        <div class="info-scroll-div custom-scroll-deposit"
+                             id="custom-scroll1">
+
+
+                          <!--<ul class="three-col">
+                            <li>NFY LP/NFT ID 13</li>
+                            <li>12</li>
+                          </ul>
+
+                          <ul class="three-col">
+                            <li>NFY LP/NFT ID 13</li>
+                            <li>12</li>
+                          </ul>-->
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center nfy-balance-box-inner outer-border mb20 bgw">
+                    <div class="input-holder2">
+                      <label for="">AMOUNT INPUT </label>
+                    </div>
+                    <input input type="number"
+                    id="input-deposit-amount"
+                    value="0">
+                  </div>
+
+                  <div class="d-flex align-items-center nfy-balance-box-inner">
+                    <input type="submit"
+                           class="nfy-balance-box-inner btn"
+                           value="DEPOSIT"
+                           id="deposit-button">
+                    <input type="submit"
+                           class="nfy-balance-box-inner btn hidden red-btn"
+                           value="WITHDRAW"
+                           id="withdraw-button">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <footer>
+      <div class="hero-banner-social page-social-section"></div>
+      <div class="foo-pdt" id="foo">    
+          <div class="row">
+              
+              <div class="col-md-5">
+                  <p>COPYRIGHT ALL RIGHTS RESERVED NFYB.FINANCE 2021</p>
+              </div>
+              <div class="col-md-7 row">
+                  <div style="margin-left: 30px;">
+                      <a href="https://twitter.com/NFYBFinance"> <i class="fab fa-twitter" style="color: #000;"></i> </a>
+                  </div>
+                  <div style="margin-left: 30px;">
+                      <a href="#"> <i class="fab fa-telegram" style="color: #000;"></i> </a>
+                  </div>
+                  <div style="margin-left: 30px;">
+                      <a href="https://github.com/NFYBFinance"> <i class="fab fa-github" style="color: #000"></i> </a>
+                  </div>
+              </div>
+              </div>
+          </div>
+      </div>
+      </div>
+  </footer>
+
+
+  </section>
+
+
+
+  <script src="js/custom.js"></script>
+  <script src="js/jquery.mCustomScrollbar.min.js"></script>
+
+  <script>
+    (function ($) {
+      $(window).on("load", function () {
+
+        $(".custom-scroll").mCustomScrollbar({
+          setHeight: 190,
+          theme: "minimal-dark"
+        });
+        $(".custom-scroll-deposit").mCustomScrollbar({
+          setHeight: 80,
+          theme: "minimal-dark"
+        });
+      });
+    })(jQuery);
+  </script>
+
+    <script src="js/custom.js"></script>
+    <script type="text/javascript" src="js/web3.min.js"></script>
+    <script type="text/javascript" src="js/abi.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
