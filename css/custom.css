@@ -1690,7 +1690,7 @@ input.red-btn[type="submit"]:hover {
   box-shadow: 2px 7px 5px -3px #b1b4ba;
   text-transform: uppercase;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .btn2, .btn2:hover {
